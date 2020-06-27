@@ -6,7 +6,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <head>
     <meta charset="UTF-8">
-    <title>Open Shop Channel: Installation Guide</title>
+    <title>Open Shop Channel: Feedback</title>
     <link rel="icon" type="image/png" href="./images/Open_Black.png">
 
     <meta property="og:title" content="Open Shop Channel">
@@ -16,7 +16,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="./images/Open_Black.png">
 </head>
-<body style="max-width: 100%; margin:0;padding:0;overflow:hidden">
+<body style="max-width: 100%; overflow-x: hidden;">
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <a class="navbar-brand" ><img src="./images/Icon.png" width="25" height="25" class="d-inline-block align-top" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,8 +34,8 @@
             <li class="nav-item">
                 <a class="nav-link" href="./errors.html">Error Codes</a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="./installation.html">Installation <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="./installation.html">Installation</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="https://wiibrew.org/w/index.php?title=Open_Shop_Channel_Downloader">OSC-DL</a>
@@ -43,8 +43,8 @@
             <li class="nav-item">
                 <a class="nav-link" href="https://www.brewtools.dev/?repo=osc-redist">OSC-REDIST</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./feedback.html">Feedback</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="./feedback.html">Feedback <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="./about.html">About</a>
@@ -55,6 +55,37 @@
         </form>
     </div>
 </nav>
-<iframe src="https://wii.guide/hbb" style="border:none;overflow:hidden;height:100%;width:100%;position:absolute;top:70px;left:0px;right:0px;bottom:0px" height="150%" width="150%"></iframe>
+<div style="margin-top: 30px; margin-right: 10px; margin-left: 10px;">
+    <h1>Beta Website Feedback</h1>
+    <form action="https://send.pageclip.co/sWtBUu4SZLJoQxKnGucABeTxT4LGDqxh/betasite-feedback" method="post">
+        <div class="form-group row">
+            <label for="email" class="col-4 col-form-label">Email</label>
+            <div class="col-8">
+                <input id="email" name="email" placeholder="dhtdht020@oscwii.org" type="email" class="form-control" aria-describedby="emailHelpBlock">
+                <span id="emailHelpBlock" class="form-text text-muted">Recommended, if you want to stay updated on your feedback.</span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="file" class="col-4 col-form-label">File</label>
+            <div class="col-8">
+                <input type="file" class="form-control-file" id="file" aria-describedby="fileHelpBlock">
+                <span id="fileHelpBlock" class="form-text text-muted">Screenshots and alike.</span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="textarea" class="col-4 col-form-label">Feedback</label>
+            <div class="col-8">
+                <textarea id="textarea" name="textarea" cols="40" rows="10" class="form-control" aria-describedby="textareaHelpBlock" required="required"></textarea>
+                <span id="textareaHelpBlock" class="form-text text-muted">What's wrong? Suggestion? Mistake? Security?</span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="offset-4 col-8">
+                <button name="submit" type="submit" class="btn btn-primary">Send Feedback</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
-</html>
