@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Open Shop Channel: Publish</title>
+    <link rel="icon" type="image/png" href="./images/Open_Black.png">
+
+    <meta property="og:title" content="Open Shop Channel">
+    <meta property="og:site_name" content="oscwii.org">
+    <meta property="og:url" content="oscwii.org">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/Open_Black.png">
+</head>
+<body style="max-width: 100%; overflow-x: hidden;">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" ><img src="./images/Icon.png" width="25" height="25" class="d-inline-block align-top" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./downloads.html">Download Center</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./errors.html">Error Codes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./installation.html">Installation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://wiibrew.org/w/index.php?title=Open_Shop_Channel_Downloader">OSC-DL</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.brewtools.dev/?repo=osc-redist">OSC-REDIST</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="./feedback.html">Feedback <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a href="./publish.html" class="btn btn-success" role="button">Publish</a>
+                <a href="" class="btn btn-dark disabled" role="button">Spot Portal</a>
+                <a href="https://github.com/OpenShopChannel/" class="btn btn-warning" role="button">GitHub</a>
+            </div>
+        </form>
+    </div>
+</nav>
+<div style="margin-top: 30px; margin-right: 10px; margin-left: 10px;">
+    <div class="spotBanner" style="width:100%; position:absolute;top:70px;left:0px;right:0px;">
+        <img src="./images/spotBanner.png" width="100%" class="d-inline-block align-top" alt="">
+    </div>
+    <div style="margin-top: 10%">
+        <h1>Publish Application</h1>
+        <form action="https://send.pageclip.co/sWtBUu4SZLJoQxKnGucABeTxT4LGDqxh/PublishPend" method="post">
+            <div class="form-group row">
+                <label for="email" class="col-4 col-form-label">Email Address</label>
+                <div class="col-8">
+                    <input id="email" required="required" name="email" type="email" class="form-control" aria-describedby="emailHelpBlock">
+                    <span id="emailHelpBlock" class="form-text text-muted">Best way to contact you.</span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="app_name" class="col-4 col-form-label">Application Name</label>
+                <div class="col-8">
+                    <input id="app_name" required="required" name="app_name" type="text" class="form-control" aria-describedby="app_nameHelpBlock">
+                    <span id="app_nameHelpBlock" class="form-text text-muted">Name of your app.</span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="app_name" class="col-4 col-form-label">Author Name</label>
+                <div class="col-8">
+                    <input id="your_name" required="required" name="your_name" type="text" class="form-control" aria-describedby="your_nameHelpBlock">
+                    <span id="your_nameHelpBlock" class="form-text text-muted">Your name or username.</span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="submission_type" class="col-4 col-form-label">Submission Type</label>
+                <div class="col-8">
+                    <select class="form-control" required="required" name="submission_type" id="submission_type" aria-describedby="submission_typeHelpBlock">
+                        <option>New App</option>
+                        <option>Update</option>
+                    </select>
+                    <span id="submission_typeHelpBlock" class="form-text text-muted">New app, or an update to an up already published?</span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="details" class="col-4 col-form-label">More Details</label>
+                <div class="col-8">
+                    <textarea id="details" name="detailstext" cols="40" rows="10" class="form-control" aria-describedby="detailsHelpBlock" required="required"></textarea>
+                    <span id="detailsHelpBlock" class="form-text text-muted">Your other contacts, information about your application, notes, evidence of code ownership, recommendations, changelog, etc.</span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="app_url" class="col-4 col-form-label">Application ZIP URL</label>
+                <div class="col-8">
+                    <input id="app_url" required="required" name="app_url" type="text" class="form-control" aria-describedby="app_urlHelpBlock">
+                    <span id="app_urlHelpBlock" class="form-text text-muted">Where can we find your app?</span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="offset-4 col-8">
+                    <button type="submit" class="btn btn-primary">Submit application for moderation</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+</body>
