@@ -92,11 +92,21 @@
                 </div>
             </div>
             <div class="form-group row">
+                <label for="submission_kind" class="col-4 col-form-label">Repository</label>
+                <div class="col-8">
+                    <select class="form-control" required="required" name="submission_kind" id="submission_kind" aria-describedby="submission_kindHelpBlock">
+                        <option>Apps</option>
+                        <option>Themes</option>
+                    </select>
+                    <span id="submission_kindHelpBlock" class="form-text text-muted">Is it an app or an HBC theme?</span>
+                </div>
+            </div>
+            <div class="form-group row">
                 <label for="submission_type" class="col-4 col-form-label">Submission Type</label>
                 <div class="col-8">
                     <select class="form-control" required="required" name="submission_type" id="submission_type" aria-describedby="submission_typeHelpBlock">
-                        <option>New App</option>
-                        <option>Update</option>
+                        <option>New Listing</option>
+                        <option>Update Existing Listing</option>
                     </select>
                     <span id="submission_typeHelpBlock" class="form-text text-muted">New app, or an update to an app already published?</span>
                 </div>
